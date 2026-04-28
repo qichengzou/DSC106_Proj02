@@ -165,9 +165,47 @@
                 <p>Design Decisions and Rationale:</p>
 
                 <ul>
-                    <li>RATIONALE_1</li>
-                    <li>RATIONALE_2</li>
-                    <li>RATIONALE_3</li>
+                    <li>
+                        Group Unsubstantiated and Exonerated together as "No Punishment." −1.5
+                        <ul>
+                            <li>
+                                We grouped “Unsubstantiated” and “Exonerated” into a single “No Punishment” category to foreground the institutional outcome that matters most to the audience—whether an officer faces consequences—rather than the procedural distinction behind that outcome. This aggregation simplifies the cognitive load and makes the pattern immediately legible: across complaint types, the majority of cases result in no disciplinary action.
+                            </li>
+                            <li>
+                                We considered alternatives such as separating “Unsubstantiated” and “Exonerated” into distinct bars, using a neutral or diverging color palette, and ordering bars by magnitude instead of fixed positioning. We ultimately chose the current design because it prioritizes clarity, making the visualization more immediately persuasive, even at the cost of some detail and neutrality.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Saturated red for "No Punishment," pale pink for "Punishment." −0.5
+                        <ul>
+                            <li>
+                                We used a saturated red for “No Punishment” and a lighter pink for “Punishment” to draw immediate visual attention to the dominant outcome. While red conventionally signals severity or urgency, here it intentionally emphasizes the prevalence of no punishment, reinforcing the chart’s central claim. Placing “No Punishment” consistently on the left further supports rapid comparison across panels by aligning the dominant category in a predictable position.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Categories of complaint severity are placed in order. −0.5
+                        <ul>
+                            <li>
+                                We arranged the complaint types from more severe (e.g., “Abuse of Authority,” “Force”) to less severe (e.g., “Discourtesy,” “Offensive Language”) to impose a meaningful structure on the x-axis. This ordering allows viewers to interpret patterns across a gradient of severity rather than as unrelated categories. By doing so, the visualization reinforces the title’s claim more persuasively: even as the seriousness of allegations increases, the prevalence of “No Punishment” remains high. This makes the pattern feel systematic rather than incidental.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        The annotation −1
+                        <ul>
+                            <li>
+                                The annotation acts as a narrative anchor, explicitly guiding the viewer to the key takeaway in the most severe complaint categories. We also added arrows pointing out of the annotation box and pointing towards bars of no punishment but with severe charges. This worked well in making the message unmistakable and reducing the effort required to interpret the chart. However, the annotation and color choice together may come across as overly leading, potentially reducing perceived neutrality.
+                            </li>
+                            <li>
+                                We also considered grouping complaint types by severity (e.g., pairing “Abuse of Authority” and “Force” as more severe categories, and “Discourtesy” and “Offensive Language” as less severe ones) through additional color encoding or panel grouping. This could have helped emphasize differences in outcomes across levels of severity and added another layer of structure to the visualization. However, we chose not to implement this because introducing another color dimension risked overloading the visual encoding and competing with the primary comparison between “No Punishment” and “Punishment.” Maintaining a simpler color scheme ensured that the viewer’s attention remained focused on the central message.
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
 
