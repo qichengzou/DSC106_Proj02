@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
         <title>Project 2 Report</title>
         <style>
             :root {
@@ -21,6 +20,8 @@
                 font: 100%/1.5 system-ui;
                 counter-reset: figure;
                 background: var(--color-neutral-95);
+            }
+            body {
                 max-width: min(75vw, 80em);
                 margin: 0 auto;
             }
@@ -42,6 +43,8 @@
             h2 {
                 border-bottom: 1px solid var(--color-neutral-80);
                 padding-bottom: 0.2em;
+                overflow-wrap: break-word;
+                word-break: break-word;
             }
 
             h1 {
@@ -103,7 +106,13 @@
             }
 
             /* Figures */
-
+            figure img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            }
+            
             figure {
                 margin: 1em 0;
                 padding: 0.5rem;
